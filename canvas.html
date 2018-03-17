@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      You're Fired
+    </title>
+    <style>
+      .yaxis{
+      transform-origin: right top 0;
+      transform: rotate(-90deg) translate(-120px,-250px);
+      float:left;
+      }
+      .xaxis{
+      transform-origin: left top 0;
+      transform: translate(-20px,550px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Who has left the Trump Administration</h1>
+    <h2> You're Fired </h2>
+    <h2 class="yaxis">Number of People Who Left</h2>
+    <h2 class="xaxis">Months Since Inauguration</h2>
+    <svg xmlns="https://www.w3.org/2000/svg" width="700" height="500" id="svg"></svg>
+    <br><br><br>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="scatter.js"></script>
+  </body>
+
+</html>
