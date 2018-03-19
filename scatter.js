@@ -8,7 +8,7 @@ var yourefired = function(e){
 
     // circles
     circles.append("circle")
-	.attr("cy", function(d) { return 400 - d*50; })
+	.attr("cy", function(d) { return 400 - d*30; })
 	.attr("cx", function(d,i) { return i*40 + 100; })
 	.attr("r", 10)
 	.attr("fill", "powderblue")
@@ -16,7 +16,7 @@ var yourefired = function(e){
     //text
     var text = cont.selectAll("text").data(info).enter();
     text.append("text")
-	.attr("y", function(d) { return 400 - d*50; })
+	.attr("y", function(d) { return 400 - d*30; })
 	.attr("x", function(d,i) { return i*40 + 80; })
 	.text(function(d) {return d;})
     text.append("text")
